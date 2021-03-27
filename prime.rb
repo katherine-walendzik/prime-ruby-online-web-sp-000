@@ -1,9 +1,8 @@
-def prime?(n)
-  for i in 2..n-1
-    
-  if n % i == 0
+def prime?(n)  
+  if n < 2
     return false
   else
-    return true
+    divisors = (2..(n-1)).to_a 
+    divisors.none? {|div| n % div == 0}
   end
 end
