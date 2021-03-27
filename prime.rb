@@ -1,7 +1,8 @@
 def prime?(n)
-  if int > 1 && int % i == 0}
-    return true
-  else
-    return false
-  end
+  for i in 2..n-1
+    if n % i == 0
+      return false
+    else
+      return true
+    end
 end
